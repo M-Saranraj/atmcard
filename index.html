@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Atm</title>
+<style>
+.first{
+background-color: red;
+text-align: center;
+padding: 1px 0px  0px 0px;
+border: solid green 5px;
+}
+.second{
+font-size: 25px;
+text-align: center;
+}
+.third{
+text-align: center;
+}
+.third spa{
+width: 100px;
+height: 150px;
+}
+</style>
+<script>
+function valid(){
+	var a=document.saran.card_no.value;
+	if(a.length>16||a.length<16){
+	 alert("please enter 16 digit number")
+	 return false;
+	}
+}
+</script>
+</head>
+<body bgcolor="skyblue">
+<div class="first" >
+<h1>Welcome To Saran's Page</h1>
+<hr color="red">
+</div>
+<div class="second">
+<p>check your atm card is safe or not safe using check digit</p>
+</div>
+<div class="third">
+<form name="saran" action="Atmcard" method="post" onSubmit="return valid();">
+Enter your card number: <input type="number" name="card_no" placeholder='Ex: 1234 5654 8765 XXXX' name="spa"/>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="check"/>
+</form>
+</div>
+</body>
+</html>
